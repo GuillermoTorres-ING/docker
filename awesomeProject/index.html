@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Aplicación</title>
+    <style>
+        /* Estilos para el encabezado */
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para el formulario de inserción */
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Estilos para la lista de información */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<h1>CRUD de Información</h1>
+<form id="insertar-form">
+    <label for="usuario">Usuario:</label>
+    <input type="text" id="usuario" name="usuario" required>
+    <br>
+    <label for="pass">Contraseña:</label>
+    <input type="password" id="pass" name="pass" required>
+    <br>
+    <input type="submit" value="Insertar">
+</form>
+<hr>
+<h2>Lista de Información</h2>
+<ul id="info-list">
+    <!-- Datos de la base de datos se insertarán aquí -->
+</ul>
+<script src="script.js"></script>
+</body>
+</html>
